@@ -13,8 +13,9 @@ __author__ = "Ryuuji Yoshimoto <ryuuji@calil.jp>"
 import click
 import json
 import unicodedata
+import jaconv
 
-DATA_VERSION = '1'
+DATA_VERSION = '2'
 
 
 @click.command()
@@ -30,8 +31,10 @@ def run(input, output):
             result.append({'code': unicodedata.normalize('NFKC', cols[0]).strip(),
                            'pref': unicodedata.normalize('NFKC', cols[1]).strip(),
                            'city': unicodedata.normalize('NFKC', cols[2]).strip(),
-                           'pref_kana': unicodedata.normalize('NFKC', cols[3]).strip(),
-                           'city_kana': unicodedata.normalize('NFKC', cols[4]).strip()})
+                           'pref_k': jaconv.h2z(cols[3]).strip(),
+                           'city_k': jaconv.h2z(cols[4]).strip(),
+                           'pref_h': jaconv.kata2hira(jaconv.h2z(cols[3])).strip(),
+                           'city_h': jaconv.kata2hira(jaconv.h2z(cols[4])).strip()})
 
     output.write(json.dumps({'title': 'jp_citycode', 'version': DATA_VERSION, 'table': result}, ensure_ascii=False).encode("utf-8"))
     click.echo('%d件処理しました' % len(result))
