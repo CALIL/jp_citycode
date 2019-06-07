@@ -26,10 +26,10 @@
         },
         "jaconv": {
             "hashes": [
-                "sha256:c8d79ad7b44adc38634476f5ff4ee42b6d92ed4b7b01d31addd98f3567132bd8"
+                "sha256:2ccdf768da20d55f30e8801e5e2e27783aae1bb29b890e503e1124134d6d09c9"
             ],
             "index": "pypi",
-            "version": "==0.2.3"
+            "version": "==0.2.4"
         }
     },
     "develop": {}
