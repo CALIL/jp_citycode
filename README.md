@@ -4,5 +4,5 @@
 
 - カーリル内部で使われていたコードを分離・継続的に管理する予定
 - Python3以降に対応
-- http://www.soumu.go.jp/denshijiti/code.html
+- https://www.soumu.go.jp/denshijiti/code.html
   （※読み込むTSVファイルはエクセルデータをテキストにコピーしたもの）

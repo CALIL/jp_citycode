@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "jp-citycode"
+version = "0.1.0"
+description = ""
+authors = ["Ryuuji Yoshimoto <ryuuji@calil.jp>"]
+readme = "README.md"
+packages = [{include = "jp_citycode"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "*"
+jaconv = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

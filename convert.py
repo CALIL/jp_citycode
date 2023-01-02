@@ -1,13 +1,10 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 """
 総務省が提供する全国地方公共団体コードをJSON形式に変換する
 http://www.soumu.go.jp/denshijiti/code.html
 （※読み込むTSVファイルはエクセルデータをテキストにコピーしたもの）
 """
 
-__copyright__ = "Copyright (C) 2017 CALIL Inc."
+__copyright__ = "Copyright (C) 2023 CALIL Inc."
 __author__ = "Ryuuji Yoshimoto <ryuuji@calil.jp>"
 
 import click
