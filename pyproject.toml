@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "jp_citycode"}]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.12"
 click = "*"
 jaconv = "*"
 
