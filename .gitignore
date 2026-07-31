@@ -71,7 +71,7 @@ target/
 .ipynb_checkpoints
 
 # pyenv
-.python-version
+# （.python-version は uv が使うためコミットする）
 
 # celery beat schedule file
 celerybeat-schedule

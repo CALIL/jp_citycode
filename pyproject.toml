@@ -1,18 +1,14 @@
-[tool.poetry]
+[project]
 name = "jp-citycode"
 version = "0.1.0"
-description = ""
-authors = ["Ryuuji Yoshimoto <ryuuji@calil.jp>"]
+description = "総務省が提供する全国地方公共団体コードをJSON形式に変換する"
 readme = "README.md"
-packages = [{include = "jp_citycode"}]
+requires-python = ">=3.14"
+authors = [{ name = "Ryuuji Yoshimoto", email = "ryuuji@calil.jp" }]
+dependencies = [
+    "click",
+    "jaconv",
+]
 
-[tool.poetry.dependencies]
-python = "^3.12"
-click = "*"
-jaconv = "*"
-
-
-[tool.poetry.group.dev.dependencies]
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.uv]
+package = false
